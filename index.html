@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en-us">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Car safty</title>
-  <style>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Car Safty</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
     ul {
       display: inline-block;
       list-style-type: none;
@@ -23,9 +23,8 @@
       padding: 8px;
     }
   </style>
-</head>
-
-<body style="background-color:#000000;">
+  </head>
+  <body style="background-color:#000000;">
   <div style="text-align:center; padding-top: 50px;">
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px" style="border:1px solid #b7562e;">
     </canvas>
@@ -40,17 +39,18 @@
       </li>
     </ul>
   </div>
-  <script type="text/javascript">
-    var Module = {
-      TOTAL_MEMORY: 268435456,
-      errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-      compatibilitycheck: null,
-      dataUrl: "Release/101_31.data",
-      codeUrl: "Release/101_31.js",
-      memUrl: "Release/101_31.mem",
-    };
-  </script>
-  <script src="Release/UnityLoader.js"></script>
-</body>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/WebGL.data",
+    codeUrl: "Release/WebGL.js",
+    memUrl: "Release/WebGL.mem",
+    
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
 
+  </body>
 </html>
